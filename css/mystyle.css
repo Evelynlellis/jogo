@@ -1,0 +1,197 @@
+/* Define as variáveis para utilização de cores*/
+:root {
+    --cor-fundo: rgb(214, 0, 0);
+    --cor-main: rgb(0, 8, 20);
+    --cor-main-dark: rgb(0, 1, 24);
+    --cor-fonte: rgb(126, 0, 0);
+    --jogadorX: rgb(252, 0, 0);
+  }
+ 
+    body{  /*
+        body(corpo da pagina), está sendo zerada as margem,bordas e preenchimentos.
+        */
+        margin: 0;
+        padding: 0;
+        border: 0;
+        height: 100vh; /*
+        O  height(altura)VH siginifica que é para pegar toda a altura visivel 
+        */
+        background-image: url(https://st4.depositphotos.com/20547288/31148/i/450/depositphotos_311482918-stock-photo-abstract-blue-and-orange-smoke.jpg);  /* imagem de fundo por URL */
+        background-position: center;  /* posição da imagem */
+        background-repeat: none; /* para que não ocorra a repetição das imagens */
+        background-size: contain; /* para que a imagem seja 100% representada. */
+    
+    }
+#reset-button{
+    color: #000;
+}
+ .bnt1{
+    background-color: rgb(212, 0, 0);
+ }
+  /* Realiza o reset das configurações do navegador*/
+  * {
+    padding: 0;
+    margin: 0;
+    font-family: 'Nosifer', serif;
+    outline: 0;
+    box-sizing: border-box;
+    text-rendering: optimizeLegibility;
+  }
+  
+  /* Definição do barra de navegação */
+  .bg-cor-que-eu-quero {
+    background: rgba(0, 0, 0, 0.911);
+  }
+    /* Ajustes na barra de navegação */
+  #titulo {
+    margin-top: 1rem;
+    font-size: 1rem;
+    color: var(--cor-fonte);
+
+  }
+
+  span{
+  
+    color: var(--cor-fundo);
+  }
+  
+  #navbar-items .navbar-nav {
+    display: flex;
+    justify-content: flex-end;
+    width: 100%;
+    
+   
+  }
+  
+  .navbar-nav a {
+    color: var(--cor-fonte);
+ 
+  }
+  
+  /* Ajusta as configurações do container*/
+  .principal {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+  }
+  
+  .principal a {
+    height: 4rem;
+  }
+  
+  i {
+    font-size: 3rem;
+  }
+  
+  #container-top {
+    margin-top: 5rem;
+  }
+    /*ajuste do tabuleiro e celulas*/
+  .tabuleiro {
+    width: 27rem;
+    height: 27rem;
+    margin: auto;
+    margin-top: 0.5rem;
+    display: flex;
+    flex-wrap: wrap;
+  }
+  
+  .celula {
+    display: flex;
+    justify-content: center;
+    cursor: pointer;
+    width: 8rem;
+    height: 8rem;
+    margin: .5rem;
+    box-shadow: .25rem .25rem rgba(100, 3, 3, 0.671);
+    background-color: rgba(0, 0, 0, 0.514);
+  }
+  
+  /* Definições do slider (galeria) */
+  #slider {
+    margin-top: 1em;
+    margin-bottom: 1em;
+    color: #000;
+  }
+  
+  #slider .carousel-caption {
+    bottom: 1em;
+    color: #000;
+  }
+  
+  #slider .carousel-caption h5 {
+    font-size: 2.5em;
+    text-shadow: #000 2px 2px;
+  }
+  
+  .btn {
+    border-top-right-radius: 0%;
+    color: rgb(0, 0, 0);
+   
+  }
+ a{
+    color: #000;
+ 
+ }
+
+
+  #slider .btn {
+    padding: 0.3em 0.7em;
+    font-size: 1em;
+    margin-top: 4em;
+    background-color: rgba(255, 0, 0, 0.541);
+    color: #000;
+  }
+  
+  .carousel-control-prev,
+  .carousel-control-next {
+    opacity: 0.7;
+  }
+  
+  .carousel-control-prev i,
+  .carousel-control-next i {
+    color: rgb(255, 0, 0);
+    font-size: 3em;
+  }
+  
+  .carousel-indicators [data-bs-target] {
+    background-color: rgb(0, 0, 0);
+    opacity: 0.8;
+  }
+
+  .carousel-indicators .active {
+    background-color: #000;
+  }
+    /*deixando o site responsivo */
+  @media (min-width: 768px) {
+    #slider .carousel-caption {
+      bottom: 1em;
+    }
+  
+    #slider .carousel-caption h5 {
+      font-size: 2em;
+      text-shadow: #000 2px 3px;
+    }
+  
+    #slider .btn {
+      padding: 0.6em 1em;
+      font-size: 1em;
+      margin-top: 1em;
+    }
+  
+    .carousel-indicators {
+      bottom: 0.25em;
+    }
+  }
+  
+  .texto {
+    font-size: 0.75rem;
+    text-align: justify;
+  }
+  
+  i {
+    
+    align-items: center;
+    font-size: 2.5em;
+    margin: .125em;
+  }
